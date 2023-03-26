@@ -1,0 +1,22 @@
+# Define the content of the HTML file
+title = "My Website"
+header = "Welcome to My Website"
+paragraph = "This is the homepage of my website. You can add your content here."
+
+# Generate the HTML code
+html = f"""
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{title}</title>
+  </head>
+  <body>
+    <h1>{header}</h1>
+    <p>{paragraph}</p>
+  </body>
+</html>
+"""
+
+# Write the HTML code to a file
+with open("index.html", "w") as f:
+    f.write(html)
