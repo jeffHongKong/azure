@@ -1,22 +1,9 @@
-# Define the content of the HTML file
-title = "My Website"
-header = "Welcome to My Website"
-paragraph = "This is the homepage of my website. You can add your content here."
-
-# Generate the HTML code
-html = f"""
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <title>{title}</title>
+    <title>This is the title of the webpage!</title>
   </head>
   <body>
-    <h1>{header}</h1>
-    <p>{paragraph}</p>
+    <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
   </body>
 </html>
-"""
-
-# Write the HTML code to a file
-with open("index.html", "w") as f:
-    f.write(html)
